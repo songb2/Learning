@@ -90,6 +90,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\hero-detail.component.ts" />
+    <TypeScriptCompile Include="app\hero.ts" />
     <TypeScriptCompile Include="app\main.ts" />
   </ItemGroup>
   <ItemGroup>
