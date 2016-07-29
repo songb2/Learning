@@ -5,12 +5,15 @@ import { HEROES } from './mock-heroes';
 
 @Injectable()
 export class HeroService {
-    getHeros() {
+    getHeroes() {
         return Promise.resolve(HEROES);
     }
-    getHerosSlowly() {
+    getHeroesSlowly() {
         return new Promise<Hero[]>(resolve =>
             setTimeout(() => resolve(HEROES), 2000) // 2 seconds
         );
+    }
+    getHero(id: number) {
+        return this.getHeroes().then(heroes => heroes.find(hero => hero.id == id));
     }
 }
