@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular2QuickStart", "Angul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angular2-tour-of-heroes", "angular2-tour-of-heroes\angular2-tour-of-heroes.csproj", "{D4FC52CD-F115-4C6A-81C1-C37EA701E64D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppTechAnJS", "WebAppTechAnJS\WebAppTechAnJS.csproj", "{E89AD79B-BB79-4F10-A781-A29AA97C7906}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,22 @@ Global
 		{D4FC52CD-F115-4C6A-81C1-C37EA701E64D}.Release|x64.Build.0 = Release|Any CPU
 		{D4FC52CD-F115-4C6A-81C1-C37EA701E64D}.Release|x86.ActiveCfg = Release|Any CPU
 		{D4FC52CD-F115-4C6A-81C1-C37EA701E64D}.Release|x86.Build.0 = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|x64.Build.0 = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Debug|x86.Build.0 = Debug|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|ARM.Build.0 = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|x64.ActiveCfg = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|x64.Build.0 = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|x86.ActiveCfg = Release|Any CPU
+		{E89AD79B-BB79-4F10-A781-A29AA97C7906}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
