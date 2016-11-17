@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web.Hosting;
 using System.Web.Http;
 
 namespace WebAppTechAnJS.Controllers.WebAPI
@@ -14,28 +16,27 @@ namespace WebAppTechAnJS.Controllers.WebAPI
         public List<DailyData> Get()
         {
             List<DailyData> lst = new List<DailyData>();
-            var item = new DailyData()
+            string path = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "data.csv");
+            using (var reader = new StreamReader(path))
             {
-                Date = "9-Jun-14",
-                Open = "62.40",
-                High = "63.34",
-                Low = "61.79",
-                Close = "62.88",
-                Volume = "37617413"
-            };
+                while (!reader.EndOfStream)
+                {
+                    var splits = reader.ReadLine().Split(',');
+                    if (splits[0] == "Date")
+                        continue;
 
-            var item1 = new DailyData()
-            {
-                Date = "6-Jun-14",
-                Open = "63.37",
-                High = "63.48",
-                Low = "62.15",
-                Close = "62.50",
-                Volume = "42442096"
-            };
-
-            lst.Add(item);
-            lst.Add(item1);
+                    var item = new DailyData()
+                    {
+                        Date = splits[0],
+                        Open = splits[1],
+                        High = splits[2],
+                        Low = splits[3],
+                        Close = splits[4],
+                        Volume = splits[5]
+                    };
+                    lst.Add(item);
+                }
+            }
 
             return lst;
         }
