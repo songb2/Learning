@@ -48,7 +48,7 @@ public class DataSourceConfigTest {
   @ContextConfiguration(classes=DataSourceConfig.class)
   @ActiveProfiles("prod")
   public static class ProductionDataSourceTest {
-    @Autowired
+    @Autowired(required=false)
     private DataSource dataSource;
     
     @Test

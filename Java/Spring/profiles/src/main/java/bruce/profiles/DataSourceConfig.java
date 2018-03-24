@@ -29,7 +29,9 @@ public class DataSourceConfig {
     jndiObjectFactoryBean.setJndiName("jdbc/myDatabase");
     jndiObjectFactoryBean.setResourceRef(true);
     jndiObjectFactoryBean.setProxyInterface(javax.sql.DataSource.class);
-    return (DataSource) jndiObjectFactoryBean.getObject();
+    DataSource ds = (DataSource) jndiObjectFactoryBean.getObject();
+    
+    return ds;
   }
 
 }
